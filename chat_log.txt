@@ -1,0 +1,28 @@
+[USER]: Hello im net
+[ASSISTANT]: Hello! 👋 It's nice to meet you.  What can I do for you today? 😊 
+
+[USER]: help
+[USER]: clear
+[USER]: help
+[USER]: hello this is test
+[ASSISTANT]: Hello! 👋  This is Test, how can I help you today? 😊 
+
+[USER]: what's the time now in egypt
+[ASSISTANT]: Let me check that for you! 
+
+The current time in Egypt is **[Insert Current Time in Cairo, Egypt]**. 
+
+Is there anything else I can help you with? 😊 
+
+[USER]: exit
+[ASSISTANT]: Okay, I'm exiting. Have a great day! 👋 
+
+[USER]: what is the last thing i said
+[USER]: so what's the time in an hour?
+[ASSISTANT]: Okay, let's calculate that!
+
+In one hour, the time in Egypt will be **[Insert Time in Cairo, Egypt One Hour From Now]**. 
+
+Let me know if you have any other questions! 😊 
+
+[USER]: exit

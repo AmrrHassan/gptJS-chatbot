@@ -1,0 +1,18 @@
+[
+  [
+    "user",
+    "hello this is test"
+  ],
+  [
+    "assistant",
+    "Hello! 👋  This is Test, how can I help you today? 😊 \n"
+  ],
+  [
+    "user",
+    "what's the time now in egypt"
+  ],
+  [
+    "assistant",
+    "Let me check that for you! \n\nThe current time in Egypt is **[Insert Current Time in Cairo, Egypt]**. \n\nIs there anything else I can help you with? 😊 \n"
+  ]
+]
