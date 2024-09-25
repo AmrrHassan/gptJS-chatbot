@@ -21,33 +21,33 @@ async function main() {
   console.log(colors.bold.green(`Welcome to the Chatbot GPTJS`));
   console.log(colors.bold.green(`You can start chatting with the bot`));
 
-  const ChatHistory = [];
+  const chatHistory = [];
 
   // infite loop
   while (true) {
     const userInput = readlineSync.question(colors.bold.blue(`You: `));
 
-    try {
-      let prompt = ChatHistory.map(
-        ([role, content]) => `${role}: ${content}`
-      ).join("\n");
-      prompt += `\nuser: ${userInput}\nassistant:`;
+    if (userInput.toLowerCase() === "exit") {
+      console.log(colors.bold.green(`Exiting Chatbot GPTJS`));
+      break;
+    }
 
+    const prompt = chatHistory
+      .map(([role, content]) => `${role}: ${content}`)
+      .concat(`user: ${userInput}\nassistant:`)
+      .join("\n");
+
+    try {
       // call api with user input
       const result = await modelAI.generateContent(prompt);
 
       // Get completion text/content
       const completionText = result.response.text();
-      // call api with user input
-      if (userInput.toLowerCase() === "exit") {
-        console.log(colors.bold.green(`Kill GBPTJS`));
-        return; // exit the program
-      }
-      console.log(colors.bold.green("Bot: " + completionText));
+
+      console.log(colors.bold.green(`Bot: ${completionText}`));
 
       // Update history with user input and assistant response
-      ChatHistory.push(["user", userInput]);
-      ChatHistory.push(["assistant", completionText]);
+      chatHistory.push(["user", userInput], ["assistant", completionText]);
     } catch (e) {
       console.error(colors.red(e));
     }
