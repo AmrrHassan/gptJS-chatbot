@@ -29,6 +29,12 @@ GPTJS is a simple terminal-based chatbot built using Gemini AI 1.5 for fast, sma
 * **Sentiment Analysis**: Analyze the sentiment of user input to provide more empathetic responses.
 
 
+### Preview
+
+![preview](./screenshot.png)
+
+
+
 ### Configuration and Setup
 
 
